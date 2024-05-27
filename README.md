@@ -8,6 +8,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### 📋 Prerequisites
 
+- Install ffmpeg on your local machine. You can download it from the [official website](https://ffmpeg.org/download.html) or install it using a package manager like Homebrew on macOS or Chocolatey on Windows.
+
+```bash
+# Installing ffmpeg with Homebrew on macOS
+brew install ffmpeg
+```
+
 - Update the `.env` file with your OpenAI API key as well as the other required environment variables.
 - Install the required dependencies by running `yarn/bun/npm install` in the project root directory.
 

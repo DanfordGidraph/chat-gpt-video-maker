@@ -15,7 +15,13 @@ These instructions will get you a copy of the project up and running on your loc
 brew install ffmpeg
 ```
 
-- Update the `.env` file with your OpenAI API key as well as the other required environment variables.
+- Create and update the `.env` file with your OpenAI API key as well as the other required environment variables. An example `.env` file is provided in the project root directory.
+
+```bash
+# Create .env file
+cp .env.example .env
+```
+
 - Install the required dependencies by running `yarn/bun/npm install` in the project root directory.
 
 ```bash

@@ -1,7 +1,7 @@
 const get = require("lodash")
 const httpRequest = require("../RESTUtils/index.js")
 
-const generatePlay = async (wordCount = process.env.PLAY_WORDCOUNT, genre = process.env.GENRE, prompt = "") => {
+const generatePlay = async (wordCount = process.env.PLAY_WORDCOUNT, genre = process.env.GENRE, prompt = process.env.PLAY_PROMPT) => {
     const endpoint = "https://api.openai.com/v1/chat/completions"
     const headers = { "Content-Type": "application/json", }
     const body = {
@@ -34,7 +34,7 @@ const generatePlay = async (wordCount = process.env.PLAY_WORDCOUNT, genre = proc
 
 }
 
-const generateStory = async (wordCount = process.env.PLAY_WORDCOUNT, genre = process.env.GENRE, prompt = "") => {
+const generateStory = async (wordCount = process.env.PLAY_WORDCOUNT, genre = process.env.GENRE, prompt = process.env.STORY_PROMPT) => {
     const endpoint = "https://api.openai.com/v1/chat/completions"
     const headers = { "Content-Type": "application/json", }
     const body = {
@@ -50,7 +50,7 @@ const generateStory = async (wordCount = process.env.PLAY_WORDCOUNT, genre = pro
             },
             {
                 "role": "user",
-                "content": prompt || `write me a short ${genre} story less than ${wordCount} words. Based on that story, provide detailed prompts that will be passed to dalle-3 to best produce high quality illustrations of what is happening in the scene taking into account the dialog of the story`
+                "content": prompt || `write me a short ${genre} STORY less than ${wordCount} words.` + 'Your prompts for Dall-E during dialog should start by re/describing the character and background style to best produce visually similar images throughout the play to further enhance the story. Every dialogue prompt must also match well with the prompt provided for the scene. Make the prompts as detailed as possible.'
             }
         ]
     }

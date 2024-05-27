@@ -63,7 +63,7 @@ Please read [CONTRIBUTING.md](https://https://github.com/DanfordGidraph/chat-gpt
 
 ## 👤 Authors
 
-- **Your Name** - _Initial work_ - [YourGithubUsername](https://github.com/danfordgidraph)
+- **Danford Gidraph** - _Initial work_ - [DanfordGidraph](https://github.com/danfordgidraph)
 
 ## 📄 License
 

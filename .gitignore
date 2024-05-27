@@ -1,0 +1,15 @@
+node_modules/
+.yarn/
+*.lock
+*.env
+*.mp4
+*.DS_Store
+src/data/audio/*/clips/*.wav
+src/data/audio/*/scene_*.wav
+src/data/audio/*/combined_*.wav
+src/data/audio/*/play_audio.wav
+src/data/audio/*/final*.wav
+!src/data/audio/ominous.wav
+!src/data/audio/silence.wav
+src/data/images/*/*.*
+src/data/json/plays/*.*

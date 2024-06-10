@@ -90,7 +90,7 @@ Feel free to open an issue if you find any bugs or have any suggestions for impr
 
 ## 🤝 Contributing
 
-Please read [CONTRIBUTING.md](https://https://github.com/DanfordGidraph/chat-gpt-video-maker/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://https://github.com/DanfordGidraph/chat-gpt-video-maker/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## 👤 Authors
 
